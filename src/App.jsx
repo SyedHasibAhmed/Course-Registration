@@ -1,5 +1,6 @@
 
 import './App.css'
+import Bookmarks from './components/Bookmarks/Bookmarks'
 import Courses from './components/Courses/Courses'
 
 
@@ -13,7 +14,7 @@ function App() {
 
     <div className='md:flex max-w-7xl mx-auto'>
       <Courses></Courses>
-      
+      <Bookmarks></Bookmarks> 
     </div>
 
     </>
