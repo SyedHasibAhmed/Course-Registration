@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Course from '../Course/Course';
 
-const Courses = () => {
+const Courses = ({handleAddToBookmark}) => {
 
     const [courses, setCourses] = useState([]);
 
@@ -20,6 +20,7 @@ const Courses = () => {
                 courses.map(course => <Course
                 key={course.id}
                 course={course}
+                handleAddToBookmark={handleAddToBookmark}
                 ></Course>)
             }
         </div>
